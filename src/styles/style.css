@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    padding: 0 1%;
+    height: 100vh;
+}
+#content {
+    display: grid;
+    grid-template-rows: 1fr 7fr;
+    height: 100%;
+}
+#nav-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1% 0;
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.261);
+}
+#brand-name {
+    font-size: 2rem;
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    color: rgba(0, 30, 255, 0.678);
+}
+#search-bar {
+    max-width: 200px;
+    justify-self: end;
+    max-height: fit-content;
+    padding: 1% 1%;
+}
+#main-content {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+#projects {
+    border-right: 2px solid  rgba(0, 0, 0, 0.286);
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+#todo-list {
+    padding: 0 0 0 1%;
+}
+#project-list {
+    display: flex;
+    flex-direction: column;
+    padding-right: 2%;
+    row-gap: 10px;
+}
+.project{
+    padding: 0 1%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.208);
+    cursor: pointer;
+    max-width: 150px;
+    max-height: 50px;
+    border-radius: 5px;
+}
+#projects button {
+    margin-top: 10px;
+    max-width: fit-content;
+    font-size: 1rem;
+    padding: 2% 3%;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(0, 0, 255, 0.701);
+    border: none;
+    border-radius: 8px;
+}
+#todos {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+#todo-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#todo-top button {
+    max-width: fit-content;
+    max-height: fit-content;
+    justify-self: end;
+    align-self: center;
+    font-size: 1rem;
+    padding: 1% 4%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.564);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.todo {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.52);
+    padding: .1rem 0 .5rem .5rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    max-height: fit-content;
+}
+.todo p {
+    margin-top: 0;
+}
+#priority {
+    padding: 10px 0;
+}
+#priority select{
+    max-height: fit-content;
+}
+.todo-checkbox {
+    width: fit-content;
+}
